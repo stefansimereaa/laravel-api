@@ -35,6 +35,7 @@ class ProjectController extends Controller
         $projects = $type->projects;
         $total = count($projects);
 
+
         return response()->json(compact('type', 'projects', 'total'));
     }
 }
