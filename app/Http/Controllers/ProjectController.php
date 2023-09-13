@@ -26,6 +26,7 @@ class ProjectController extends Controller
         if (!$project)
             return response(status: 404);
 
+
         return response()->json($project);
     }
 
